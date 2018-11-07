@@ -4,7 +4,9 @@
   "description": "Base MMT repo that powers the generation of MMT front-end projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dry-release": "npmpub --dry --verbose --no-release",
+    "release": "npmpub --no-release"
   },
   "bin": {
     "mmt": "index.js"
@@ -26,5 +28,8 @@
     "node-plop": "^0.16.0",
     "update-notifier": "^2.5.0",
     "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "npmpub": "^4.1.0"
   }
 }

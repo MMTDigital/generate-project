@@ -13,7 +13,7 @@
     "{{kebabCase name}}"
   ],
   "author": "MMT Digital",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
     "core-js": "2.5.x",
     "domready": "1.0.x",
