@@ -4,9 +4,8 @@
   "description": "Front-end setup for {{name}}",
   "main": "src/index.js",
   "scripts": {
-    "build": "babel src --out-dir . --ignore **/__tests__",
-    "watch": "babel -w src --out-dir . --ignore **/__tests__",
-    "prepare": "cross-env NODE_ENV=production npm run build"
+    "start": "cross-env NODE_ENV=development mmt-webpack --dev",
+    "build": "cross-env NODE_ENV=production mmt-webpack --prod"
   },
   "keywords": [
     "mmt",
@@ -16,9 +15,12 @@
   "author": "MMT Digital",
   "license": "MIT",
   "dependencies": {
-
+    "core-js": "2.5.x",
+    "domready": "1.0.x",
+    "regenerator-runtime": "0.12.x"
   },
   "devDependencies": {
-    "mmt-webpack": "1.0.0"
+    "mmt-webpack": "1.0.0",
+    "cross-env": "5.2.x"
   }
 }
