@@ -4,7 +4,7 @@ const inquirer = require('inquirer')
 const kleur = require('kleur')
 const notify = require('./notify')
 const constants = require('./constants')
-const generateVanilla = require('./generators/vanilla')
+const generateVanilla = require('./generators/scripts/vanilla')
 const { vanilla } = constants
 
 const processAnswers = ({ chosenTodo }) => {
