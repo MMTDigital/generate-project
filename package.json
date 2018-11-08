@@ -4,7 +4,6 @@
   "description": "Base MMT repo that powers the generation of MMT front-end projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dry-release": "npmpub --dry --verbose --no-release",
     "release": "npmpub --no-release"
   },
