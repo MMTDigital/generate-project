@@ -1,6 +1,6 @@
 {
-  "name": "mmt",
-  "version": "1.0.0",
+  "name": "@mmtdigital/mmt",
+  "version": "0.1.0",
   "description": "Base MMT repo that powers the generation of MMT front-end projects",
   "main": "index.js",
   "scripts": {
