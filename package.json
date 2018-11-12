@@ -1,5 +1,5 @@
 {
-  "name": "@mmtdigital/mmt",
+  "name": "@mmtdigital/generate-project",
   "version": "0.1.0",
   "description": "Base MMT repo that powers the generation of MMT front-end projects",
   "main": "index.js",
@@ -18,9 +18,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MMTDigital/mmt/issues"
+    "url": "https://github.com/MMTDigital/generate-project/issues"
   },
-  "homepage": "https://github.com/MMTDigital/mmt#readme",
+  "homepage": "https://github.com/MMTDigital/generate-project#readme",
   "dependencies": {
     "inquirer": "^6.2.0",
     "kleur": "^2.0.2",
