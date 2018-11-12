@@ -14,7 +14,7 @@ const prepareFiles = async (generatorName) => {
     const generatorTemplates = resolve(__dirname, 'templates', generatorName)
 
     await copyFiles(sharedTemplates, tmpDir, { dot: true })
-    await copyFiles(generatorTemplates, tmpDir  { dot: true })
+    await copyFiles(generatorTemplates, tmpDir,  { dot: true })
   } catch (error) {
     console.warn('Failed to prepare files!', error)
     process.exit(1)
