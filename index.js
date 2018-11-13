@@ -5,11 +5,25 @@ const kleur = require('kleur')
 const notify = require('./notify')
 const constants = require('./constants')
 const generateVanilla = require('./generators/scripts/vanilla')
-const { vanilla } = constants
+
+const {
+  vanilla,
+  reactClient,
+  reactNode,
+  nodeApi
+ } = constants
+
+const comingSoon = () => {
+  console.info(kleur.bgMagenta.bold.white('\n\n This is coming soon, promise!! Until that time, please ask anyone from the Front-end Group to help out \n\n'))
+  process.exit(1)
+}
 
 const processAnswers = ({ chosenTodo }) => {
   const actions = {
-    [vanilla]: generateVanilla
+    [vanilla]: generateVanilla,
+    [reactClient]: comingSoon,
+    [reactNode]: comingSoon,
+    [nodeApi]: comingSoon
   }
 
   actions[chosenTodo]()
@@ -22,8 +36,20 @@ const askQuestions = () => {
     message: 'What would you like to do today?',
     choices: [
       {
-        name: 'Generate a vanilla front-end boilerplate (webpack, folders + files, ES6+)',
+        name: 'Generate a vanilla front-end project',
         value: vanilla
+      },
+      {
+        name: 'Generate a client-side React project',
+        value: reactClient
+      },
+      {
+        name: 'Generate a Node and React project',
+        value: reactNode
+      },
+      {
+        name: 'Generate a Node API',
+        value: nodeApi
       }
     ]
     }

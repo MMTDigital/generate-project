@@ -1,3 +1,6 @@
 module.exports = {
-  vanilla: 'vanilla'
+  vanilla: 'vanilla',
+  reactClient: 'reactClient',
+  reactNode: 'reactNode',
+  nodeApi: 'nodeApi'
 }

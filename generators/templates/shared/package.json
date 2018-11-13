@@ -5,7 +5,13 @@
   "main": "src/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development mmt-webpack --dev",
-    "build": "cross-env NODE_ENV=production mmt-webpack"
+    "build": "cross-env NODE_ENV=production mmt-webpack",
+    "lint": "mmt-lint --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "keywords": [
     "mmt",
@@ -20,6 +26,8 @@
     "regenerator-runtime": "0.12.x"
   },
   "devDependencies": {
-    "cross-env": "5.2.x"
+    "cross-env": "5.2.x",
+    "husky": "1.1.x",
+    "lint-staged": "8.0.x"
   }
 }
