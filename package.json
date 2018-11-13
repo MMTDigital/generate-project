@@ -1,6 +1,6 @@
 {
   "name": "@mmtdigital/generate-project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Base MMT repo that powers the generation of MMT front-end projects",
   "main": "index.js",
   "scripts": {
