@@ -59,7 +59,7 @@ const askQuestions = () => {
 
 const start = () => {
   notify()
-  console.info(`\n ${kleur.bold.white.bgBlue(' ' + 'Welcome to the MMT Digital command line tool' + ' ')} \n`)
+  console.info(`\n ${kleur.bold.white.bgBlue(' ' + 'Welcome to the MMT Digital project generator' + ' ')} \n`)
   askQuestions()
 }
 

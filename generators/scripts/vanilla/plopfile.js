@@ -10,13 +10,19 @@ module.exports = (plop) => {
       {
         type: 'input',
         name: 'name',
-        message: 'What is the name of the project? E.g.: FRC Marketing Website or VOXI Sales Journey'
+        message: 'What is the name of the project? (E.g. Bacardi Marketing)'
       },
       {
         type: 'confirm',
         name: 'confirmDir',
         default: false,
-        message: 'I am going to create your project files in the current directory. Is this okay?'
+        message: `I am going to create your project files in the current directory (${output}). Is this okay?`
+      },
+      {
+        type: 'confirm',
+        name: 'confirmDir',
+        default: false,
+        message: `Last thing, please ensure that this is a valid git repo — as we're going to install githooks... Is it?`
       }
     ],
     actions: [
