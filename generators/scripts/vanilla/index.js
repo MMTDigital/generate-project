@@ -7,6 +7,7 @@ const processPrompts = require('../../processPrompts')
 const successMessages = require('./success')
 const installDeps = require('../../installDeps')
 const notifyActionsComplete = require('./notifyActionsComplete')
+const kleur = require('kleur')
 
 const plopFile = resolve(__dirname, 'plopfile.js')
 const plop = nodePlop(plopFile)
@@ -23,7 +24,8 @@ module.exports = () => (
     .then(installDeps)
     .then(successMessages)
     .catch(error => {
-      console.warn('Error generating files!', error)
+      console.warn(kleur.bold.yellow(error))
       process.exit(1)
     })
+    .then(cleanup)
 )
