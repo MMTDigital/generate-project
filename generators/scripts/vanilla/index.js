@@ -5,6 +5,8 @@ const prepareFiles = require('../../prepareFiles')
 const cleanup = require('../../cleanup')
 const processPrompts = require('../../processPrompts')
 const successMessages = require('./success')
+const installDeps = require('../../installDeps')
+const notifyActionsComplete = require('./notifyActionsComplete')
 
 const plopFile = resolve(__dirname, 'plopfile.js')
 const plop = nodePlop(plopFile)
@@ -16,7 +18,9 @@ module.exports = () => (
     .then(generator.runPrompts)
     .then(processPrompts)
     .then(generator.runActions)
+    .then(notifyActionsComplete)
     .then(cleanup)
+    .then(installDeps)
     .then(successMessages)
     .catch(error => {
       console.warn('Error generating files!', error)

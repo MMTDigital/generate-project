@@ -4,6 +4,7 @@ const inquirer = require('inquirer')
 const kleur = require('kleur')
 const notify = require('./notify')
 const constants = require('./constants')
+const clear = require('clear')
 const generateVanilla = require('./generators/scripts/vanilla')
 
 const {
@@ -58,6 +59,7 @@ const askQuestions = () => {
 }
 
 const start = () => {
+  clear()
   notify()
   console.info(`\n ${kleur.bold.white.bgBlue(' ' + 'Welcome to the MMT Digital project generator' + ' ')} \n`)
   askQuestions()

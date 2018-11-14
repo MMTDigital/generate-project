@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/MMTDigital/generate-project#readme",
   "dependencies": {
+    "clear": "^0.1.0",
     "inquirer": "^6.2.0",
     "kleur": "^2.0.2",
     "node-plop": "^0.16.0",
+    "ora": "^3.0.0",
     "recursive-copy": "^2.0.9",
     "rimraf": "^2.6.2",
     "update-notifier": "^2.5.0",
