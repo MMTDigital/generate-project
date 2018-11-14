@@ -1,11 +1,12 @@
 {
   "name": "{{kebabCase name}}",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Front-end setup for {{name}}",
   "main": "src/index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development mmt-webpack --dev",
-    "build": "cross-env NODE_ENV=production mmt-webpack",
+    "start": "cross-env NODE_ENV=development mmt-webpack",
+    "build:dev": "cross-env NODE_ENV=development mmt-webpack --dev",
+    "build:prod": "cross-env NODE_ENV=production mmt-webpack --prod",
     "lint": "mmt-lint --fix"
   },
   "husky": {
