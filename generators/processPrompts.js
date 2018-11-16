@@ -1,9 +1,14 @@
 const processPrompts = (prompts) => {
+  const { confirmDir, confirmGit } = prompts
   return new Promise((resolve, reject) => {
-    reject(`Your prompts tell us that you're not quite ready to create files yet. Nothing was created`)
-    if (!prompts.confirmDir) reject()
+    if (!name) {
+      reject(`We need a name... Nothing was created`)
+    }
+    if (!confirmDir || !confirmGit) {
+      reject(`Your responses say that you're not quite ready to create files yet. Nothing was created`)
+    }
+    resolve()
   })
-  resolve()
 }
 
 module.exports = processPrompts

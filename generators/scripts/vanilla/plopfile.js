@@ -20,7 +20,7 @@ module.exports = (plop) => {
       },
       {
         type: 'confirm',
-        name: 'confirmDir',
+        name: 'confirmGit',
         default: false,
         message: `Last thing, please ensure that this is a valid git repo — as we're going to install githooks... Is it?`
       }
