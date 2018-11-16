@@ -1,5 +1,5 @@
 const processPrompts = (prompts) => {
-  const { confirmDir, confirmGit } = prompts
+  const { confirmDir, confirmGit, name } = prompts
   return new Promise((resolve, reject) => {
     if (!name) {
       reject(`We need a name... Nothing was created`)
