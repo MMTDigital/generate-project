@@ -22,14 +22,14 @@
   "author": "MMT Digital",
   "license": "UNLICENSED",
   "dependencies": {
-    "core-js": "2.5.x",
-    "domready": "1.0.x",
-    "regenerator-runtime": "0.12.x"
+    "core-js": "^2.5.7",
+    "domready": "^1.0.8",
+    "regenerator-runtime": "^0.12.1"
   },
   "devDependencies": {
-    "@mmtdigital/mmt-webpack": "0.1.0",
-    "cross-env": "5.2.x",
-    "husky": "1.1.x",
-    "lint-staged": "8.0.x"
+    "@mmtdigital/mmt-webpack": "^0.1.0",
+    "cross-env": "^5.2.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4"
   }
 }
